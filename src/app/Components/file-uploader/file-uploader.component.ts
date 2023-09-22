@@ -3,14 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-file-uploader',
   template: `
-  <div class="container">
+  <div class="container mt-3">
   <h3>File Uploader</h3>
   <div class="flex-box">
     <!-- <div class="selectFileBtn"> -->
       <button>Choose File</button>
     <!-- </div> -->
     <div>
-      <button type="button" class="btn btn-success btn-sm" disabled>Success</button>
+      <button type="button" class="btn btn-success btn-sm" disabled>Upload</button>
     </div>
   </div>
 
@@ -25,15 +25,12 @@ import { Component, OnInit } from '@angular/core';
   </div>
 
   <!-- List of files -->
-  <div class="list-group containerAlign">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-      List of Files
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-    <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
-  </div>
+  <ul class="list-group mb-3">
+    <li class="list-group-item active" aria-current="true" style="background-color: #E2E3E5; color: #000; border: 1px solid #E2E3E5;">List of items</li>
+    <li class="list-group-item" style="color: blue;">item 1</li>
+    <li class="list-group-item" style="color: blue;">item 2</li>
+    <li class="list-group-item" style="color: blue;">item 3</li>
+  </ul>
 </div>
   `,
   styleUrls: ['./file-uploader.component.css']
