@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid gray;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectFileBtn {
+  width: 50%;
+}
+
+.containerAlign {
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #E2E3E5;
+}
+
+.text {
+  padding: 10px;
+}
